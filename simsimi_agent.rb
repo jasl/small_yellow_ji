@@ -32,5 +32,3 @@ class SimsimiAgent
       "#{POST_URL}#{question}"
     end
 end
-
-puts SimsimiAgent.new.chat "你是三黄鸡~"
