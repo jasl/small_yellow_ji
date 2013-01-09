@@ -15,7 +15,7 @@ class SimsimiAgent
   attr_accessor :rescue_reply
   attr_reader :id
 
-	def initialize(rescue_reply = "呵呵~")
+  def initialize(rescue_reply = "呵呵~")
     @rescue_reply = rescue_reply
     @id = Digest::SHA1.hexdigest('')[0..7]
 
@@ -23,7 +23,7 @@ class SimsimiAgent
     @client.set_cookie_store("cookie_#{@id}.dat")
     
     touch_talk_page
-	end
+  end
 
   def chat(dialog)
     begin
